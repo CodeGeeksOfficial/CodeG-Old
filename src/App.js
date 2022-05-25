@@ -1,16 +1,20 @@
 import React from 'react';
-// import './App.css';
-import {Header} from './Components/Header';
+import './App.css';
+import Navbar from './Components/Navbar';
+import CreateContestCard from './Components/Create_Contest_Card';
 import Footer from './Components/Footer';
+import MainCard from './Components/Main_Card';
 
 function App() {
   return (
-    <>
-      <div className="App">
-      <Header/>
-      <Footer/>
+    <div className="App">
+      <Navbar/>
+      <MainCard/>
+      <div className="create-contest-card-background">
+        <CreateContestCard/>
       </div>
-    </>
+      <Footer/>
+    </div>
   );
 }
 
