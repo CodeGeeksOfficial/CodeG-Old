@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gagalin');
+
+header{ 
+    display: flex;
+    justify-content: center;
+    /* ↪ push the left and right elements to far edges and item in the middle will get evenly spaced between them */
+    align-items:center;
+    padding:10px 10px;
+    /* background-color: black; */
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    width: 40%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+li{
+    padding-right: 5%;
+}
+li:last-child{
+    padding-right: 0%;
+}
+nav ul li a{
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover {
+    
+    color: rgb(10, 255, 195);
+}
+.user-info a{
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+.user-info a:hover {
+    color: rgb(10, 255, 195);
+}
+.codeg-badge{
+    justify-content: center;
+    width: 20%;
+    display: flex;
+}
+.user-info{
+    display: flex;
+    justify-content: right;
+    /* border: solid 1px white; */
+    align-items: center ;
+    width: 40%;
+}
+.sign-in{
+    margin-right: 5%;
+}
+.sign-up{
+    padding: 1% 2%;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+.logo-name{
+    padding-left: 3%;
+    font-family: 'Gagalin', sans-serif;
+    color: white;
+    font-size: 32px;
+}
+.logo-name-G{
+    color: rgb(10, 255, 195);;
+}
+img{
+    height: 40px;
+    width: 40px;
+}
