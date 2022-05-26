@@ -4,6 +4,5 @@
 }
 .create-contest-card-background{
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }

@@ -3,13 +3,14 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import CreateContestCard from './Components/Create_Contest_Card';
 import Footer from './Components/Footer';
-import MainCard from './Components/Main_Card';
+import Mainbox from './Components/Mainbox';
 
 function App() {
   return (
+    // <Mainbox/>
     <div className="App">
       <Navbar/>
-      <MainCard/>
+      <Mainbox/>
       <div className="create-contest-card-background">
         <CreateContestCard/>
       </div>
