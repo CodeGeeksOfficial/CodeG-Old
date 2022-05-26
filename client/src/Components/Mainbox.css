@@ -11,7 +11,7 @@
     margin-left: 35px;
     margin-right: 35px;
 }
- 
+
 .left{
     width: 50%;
     align-content: center;
@@ -82,6 +82,7 @@
   }
   
 .logo_background{
+  
   border-radius: 50%;
   width: 33.5rem;
   height: 33.5rem;
@@ -96,7 +97,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  z-index: -1;
+  
   border-radius: 50%;
   width: 33.5rem;
   height: 33.5rem;
@@ -119,6 +120,7 @@
 }
   
 .cg_logo_container{
+  z-index: 2;
   background-color: #363940;
   border: 1px solid #363940;
   border-radius: 50%;
