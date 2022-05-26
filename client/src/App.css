@@ -1,11 +1,9 @@
-/* .App {
-  margin: 0%;
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  background-color: rgb(245, 245, 245);
+  color: #282c34;
+}
+.create-contest-card-background{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+}
