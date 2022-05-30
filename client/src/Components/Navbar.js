@@ -24,7 +24,7 @@ export default function Navbar() {
                 </ul>
             </nav>
             <div className="codeg-badge">
-                <div className="logo-img"><img src={logo} /></div>
+                <div className="logo-img"><img src={logo} alt="CodeG Logo"/></div>
                 <div className="logo-name">CODE<span className="logo-name-G">G</span></div>
             </div>
             <div className="user-info">

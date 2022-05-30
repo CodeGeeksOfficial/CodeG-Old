@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from '../Assets/CodeG-Logo.png'
-import discord_logo from '../Assets/discord_logo.png'
+import discord_logo from '../Assets/Discord-Logo.png' //TODO Doubt: can this .. thing in this line be used to exploit file system of a server when deployed on a server ??
 import './Mainbox.css'
 
-function Mainbox() {
+export default function Mainbox() {
   return (
     <div className="mainbox-card">
       <div className="parent d-flex flex-row justify-content-center">
@@ -49,5 +49,3 @@ function Mainbox() {
     </div>
   );
 }
-
-export default Mainbox;
