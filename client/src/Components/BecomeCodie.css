@@ -48,7 +48,7 @@
 }
 
 .become-codie-discord-link{
-    padding: 1%;
+    padding: 2% 5% 2% 5%;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     font-size: 10px;
@@ -83,7 +83,7 @@
 }
 
 .become-codie-telegram-link{
-    padding: 1%;
+    padding: 2% 5% 2% 5%;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     font-size: 10px;

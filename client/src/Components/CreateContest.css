@@ -20,7 +20,7 @@
 .create-contest-card-description{
     margin-top: 12px;
     font-size: 0.9vw;
-    line-height: 18px;
+    line-height: 3vh;
 }
 .create-contest-card-content{
     padding: 3%;
@@ -51,6 +51,4 @@
 }
 .create-contest-link:active{
     box-shadow: 0px 0px 15px rgb(10, 255, 195);
-    height: 50px;
-    width: 200px;
 }
