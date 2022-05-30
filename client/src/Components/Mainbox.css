@@ -1,0 +1,156 @@
+
+.mainbox-card{
+  background-color: #282c34;
+}
+.parent{
+    padding-top: 4%;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.left{
+    width: 50%;
+    align-content: center;
+}
+
+.right{
+    width: 50%;
+    align-self: center;
+}
+
+.left-top-text{
+    padding-left: 2%;
+    font-family: 'Gagalin', sans-serif;
+    color: white;
+    font-size: 170px;
+    letter-spacing: 15px;
+    line-height: 0.9em;
+}
+
+.left-bottom-text{
+    padding-top: 3%;
+    padding-left: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 27px;
+}
+
+.left-bottom-sign{
+    margin: 10px;
+    margin-top: 25px;
+}
+.mail{
+    padding: 2%;
+    font-family: inherit;
+    width: 60%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 7px;
+}
+.button{
+    padding: 2%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15pt;
+    font-weight: bolder;
+    width: 40%;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #5a5a5a;
+}
+
+.button:hover{
+    color: #00ffc3;
+}
+
+.right{
+  margin-left: 12rem;
+}
+.logo{
+    position: relative;
+    width: 35rem;
+    border: 2px solid white;
+    height: 35rem;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.logo_background{
+  
+  border-radius: 50%;
+  width: 33.5rem;
+  height: 33.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 1%;
+}
+
+.logo_background_animation{
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  border-radius: 50%;
+  width: 33.5rem;
+  height: 33.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 1%;
+  background: linear-gradient(to bottom right,  #282c34 0%,#282c34 50%,rgb(10, 255, 195) 50%,rgb(10, 255, 195) 100%);
+  animation: rotate-logo 5s infinite;
+}
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+.cg_logo_container{
+  z-index: 2;
+  background-color: #363940;
+  border: 1px solid #363940;
+  border-radius: 50%;
+  width: 27rem;
+  height: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  box-shadow: -2px 3px 10px black;
+  animation: none;
+  }
+  
+  .cg_logo{
+  width: 90%;
+  height: auto;
+  }
+  
+  .discord_logo_container{
+    background-color: #9f9e9d;
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    left: 80%;
+    top: 5%;
+    box-shadow: -2px 3px 10px black;
+  }
+  
+  .discord_logo{
+    width: 100%;
+    height: auto;
+  }

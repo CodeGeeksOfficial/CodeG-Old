@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Required softwares for local development
+
+If Node.js and npm is not installed on your local machine then follow the given link [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+## Installing dependencies 
+
+Inside CodeG/Client run below command to install required dependencies like [Node_Modules](),[Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html)\
+    
+## Run commands :
+        
+### 'npm install' 
+
+To install required dependencies
+
+### 'npm audit fix --force'
+
+To fix vulnurabilites if there
+
 ## Available Scripts
 
 In the project directory, you can run:
