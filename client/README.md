@@ -8,10 +8,17 @@ If Node.js and npm is not installed on your local machine then follow the given 
 
 ## Installing dependencies 
 
-Inside CodeG/Client run below command to install required dependencies like [Node_Modules](),[Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html)
-    Run commands :
-        $ npm install (to install required dependencies)
-        $ npm audit fix --force (to fix vulnurabilites if there)
+Inside CodeG/Client run below command to install required dependencies like [Node_Modules](),[Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html)\
+    
+## Run commands :
+        
+### 'npm install' 
+
+To install required dependencies
+
+### 'npm audit fix --force'
+
+To fix vulnurabilites if there
 
 ## Available Scripts
 
