@@ -10,6 +10,13 @@
     background-color: rgb(255,255,255);
     box-shadow:5px 5px 16px rgb(160, 160, 160);
 }
+.become-codie-card-content > span{
+    color: rgb(50,50,50);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 42px;
+    font-family: 'Gagalin', sans-serif;
+}
 
 .become-codie-card-illustration img{
     width: 100%;

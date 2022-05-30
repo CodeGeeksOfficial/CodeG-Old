@@ -8,7 +8,7 @@ export default function BecomeCodie() {
   return (
     <div className="become-codie-card">
       <div className="become-codie-card-content">
-        <h1>Become A Codie Now !</h1>
+        <span>Become A Codie Now !</span>
         <div className="become-codie-card-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis nihil quas, fuga temporibus, veniam vero pariatur molestias quo totam illo recusandae incidunt iure mollitia eos magni! Aut, alias necessitatibus.
         </div>
