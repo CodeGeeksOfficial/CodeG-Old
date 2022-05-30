@@ -1,0 +1,111 @@
+.become-codie-card{
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 2px;
+    display: flex;
+    width: 900px;
+    height: 230px;
+    background-color: rgb(255,255,255);
+    box-shadow:5px 5px 16px rgb(160, 160, 160);
+}
+
+.become-codie-card-illustration img{
+    width: 100%;
+    height: 100%;
+}
+.become-codie-card-illustration{
+    width: 35%;
+}
+.become-codie-card-description{
+    font-weight:250;
+    height: 40%;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+}
+.become-codie-card-content{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.become-codie-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.become-codie-discord-link{
+    padding: 1%;
+    width: 45%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 10px;
+    border: solid 1px rgb(150,150,150);
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+}
+.become-codie-discord-link:hover{
+    background-color: rgb(210,210,210);
+    border: solid 1px rgb(210,210,210);
+}
+.become-codie-discord-link:active{
+    box-shadow: 0px 0px 15px rgb(210,210,210);
+}
+.join-us-at-discord{
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    text-align: right;
+}
+.join-us-at-discord > .text{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(143,158,248);
+}
+.join-us-at-discord > span {
+    color: rgb(143,158,248);
+    font-size: large;
+    font-weight: bold;
+}
+
+.become-codie-telegram-link{
+    padding: 1%;
+    width: 45%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 10px;
+    border: solid 1px rgb(150,150,150);
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+}
+.become-codie-telegram-link:hover{
+    background-color: rgb(210,210,210);
+    border: solid 1px rgb(210,210,210);
+}
+.become-codie-telegram-link:active{
+    box-shadow: 0px 0px 15px rgb(210,210,210);
+}
+.join-us-at-telegram{
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    text-align: right;
+
+}
+.join-us-at-telegram > .text{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(90,179,240);
+}
+.join-us-at-telegram > span {
+    color: rgb(90,179,240);
+    font-size: large;
+    font-weight: bold;
+}
