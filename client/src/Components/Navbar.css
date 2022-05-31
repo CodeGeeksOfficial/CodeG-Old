@@ -1,10 +1,10 @@
 
 .header-navbar{ 
-    font-size: large;   /*Large bhai to khush ho gyaa hoga niii.... ladkee jeet gya !! */
+    font-size: 20px;   /*Large bhai to khush ho gyaa hoga niii.... ladkee jeet gya !! */
     display: flex;
     justify-content: center;
     align-items:center;
-    padding:10px 10px;
+    padding:10px 30px;
     background-color: #282c34;
 }
 .header-nav-links > li > div{
