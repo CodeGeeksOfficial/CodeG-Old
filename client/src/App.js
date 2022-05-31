@@ -11,7 +11,7 @@ function App() {
     // <Mainbox/>
     <div className="App">
       <Navbar/>
-      {/* <Mainbox/> */}
+      <Mainbox/>
       <section className="create-contest-card-background">
         <CreateContestCard/>
       </section>
