@@ -18,7 +18,9 @@ function App() {
       <section className="become-codie-card-background">
         <BecomeCodie/>
       </section>
-      <Footer/>
+      <section className='footer-section'>
+        <Footer/>
+      </section>
     </div>
   );
 }

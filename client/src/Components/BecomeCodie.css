@@ -5,7 +5,7 @@
     border-radius: 5px;
     box-shadow: 2px;
     display: flex;
-    width: 900px;
+    width: 75vw;
     height:auto;
     background-color: rgb(255,255,255);
     box-shadow:5px 5px 16px rgb(160, 160, 160);
@@ -27,12 +27,11 @@
     width: 45%;
 }
 .become-codie-card-description{
-    font-weight:250;
     height: 40%;
     width: 80%;
+    font-size: 1.05vw;
+    line-height: 3vh;
     text-align: center;
-    font-size: 1vw;
-    line-height: 18px;
 }
 .become-codie-card-content{
     height: 100%;

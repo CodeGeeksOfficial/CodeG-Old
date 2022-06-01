@@ -18,3 +18,8 @@
 ::selection{
   background-color:rgb(10, 255, 195) ;
 }
+.footer-section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
