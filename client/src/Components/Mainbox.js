@@ -7,21 +7,19 @@ export default function Mainbox() {
   return (
     <div className="mainbox-card">
       <div className="mainbox-content">
-        <div>
+        <div className="mainbox-container">
           <div className="mainbox-code-geeks-text">
             CODE<br />GEEKS
           </div>
           <div className="mainbox-info">
-            <div>
-              <div className="mainbox-codeg-tagline">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text.
-              </div>
-              <div className="mainbox-signup">
-                <input className="mail-input-box" type="email" placeholder="Email Address"></input>
-                <button className="mail-button">Sign up for CodeG</button>
-              </div>
+            <div className="mainbox-codeg-tagline">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text.
+            </div>
+            <div className="mainbox-signup">
+              <input className="mail-input-box" type="email" placeholder="Email Address"></input>
+              <button className="mail-button">Sign up for CodeG</button>
             </div>
           </div>
         </div>
