@@ -21,5 +21,6 @@
 .footer-section{
   display: flex;
   justify-content: center;
+  background-color: #282c34;
   width: 100%;
 }

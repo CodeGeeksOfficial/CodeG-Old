@@ -1,20 +1,31 @@
+.become-a-codie-curved-bg{
+
+    margin-top: 100px;  /* Temporary hai ... remove krna h*/
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(1400px 150px at top, transparent 99%, #282c34 100%);
+}
+
 .become-codie-card{
     display: flex;
     justify-content: center;
-    border: solid 1px black;
-    border-radius: 5px;
+    border: solid 5px #282c34;
+    border-radius: 10px;
     box-shadow: 2px;
     display: flex;
-    width: 75vw;
+    width: 90%;
     height:auto;
     background-color: rgb(255,255,255);
-    box-shadow:5px 5px 16px rgb(160, 160, 160);
+    box-shadow: 3px 3px 5px #000;
+    outline: 2px solid #f5f5f5;
 }
 .become-codie-card-content > span{
     color: rgb(50,50,50);
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: 'Gagalin', sans-serif;
 }
 
@@ -29,8 +40,8 @@
 .become-codie-card-description{
     height: 40%;
     width: 80%;
-    font-size: 1.05vw;
-    line-height: 3vh;
+    font-size: 1.5vw;
+    line-height: 4vh;
     text-align: center;
 }
 .become-codie-card-content{
