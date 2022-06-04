@@ -1,20 +1,24 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 /* All imported files in App.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gagalin');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gagalin");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap");
 .App {
   background-color: rgb(245, 245, 245);
   color: #282c34;
 }
-.create-contest-card-background{
+.create-contest-card-background {
   display: flex;
   justify-content: center;
 }
-.become-codie-card-background{
+.become-codie-card-background {
   display: flex;
   justify-content: center;
 }
-::selection{
-  background-color:rgb(10, 255, 195) ;
+::selection {
+  background-color: rgb(10, 255, 195);
 }
