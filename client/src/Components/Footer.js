@@ -11,10 +11,10 @@ export default function Footer() {
     <div className="Footer">
       <div className='footer-content'>
         <ul>
-          <li>&#169; 2021 CodeG</li>
-          <li>Terms</li>
-          <li>Privacy</li>
-          <li>Contact</li>
+          <li><div>&#169; 2021 CodeG</div></li>
+          <li><div>Terms</div></li>
+          <li><div>Privacy</div></li>
+          <li><div>Contact</div></li>
         </ul>
       </div>
       <div className='footer-socialmedia'>
