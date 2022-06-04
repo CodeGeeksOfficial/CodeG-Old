@@ -19,6 +19,7 @@ function App() {
       <section className="become-codie-card-background">
         <BecomeCodie />
       </section>
+      {/* <SignUp /> */}
       <section className="footer-section">
         <Footer />
       </section>
