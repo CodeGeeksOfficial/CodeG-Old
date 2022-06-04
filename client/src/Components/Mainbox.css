@@ -1,107 +1,120 @@
 
 .mainbox-card{
-  background-color: #282c34;
-}
-.parent{
-    padding-top: 4%;
-    margin-left: 35px;
-    margin-right: 35px;
+  display: flex;
+  height: 50vw;
+  background-image: radial-gradient(1100px 100px at bottom, transparent 99%, #282c34 100%);
 }
 
-.left{
-    width: 50%;
-    align-content: center;
+
+/* Left Section */
+.mainbox-content{
+  display: flex;
+  width: 55%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.right{
-    width: 50%;
-    align-self: center;
+.mainbox-container{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 95%;
 }
 
-.left-top-text{
-    padding-left: 2%;
-    font-family: 'Gagalin', sans-serif;
-    color: white;
-    font-size: 170px;
-    letter-spacing: 15px;
-    line-height: 0.9em;
+
+.mainbox-code-geeks-text{
+  font-family: 'Gagalin', sans-serif;
+  color: white;
+  font-size: 10vw;
+  letter-spacing: 1.2vw;
+  line-height: 0.9em;
+  transform: scale(1, 0.9); 
 }
 
-.left-bottom-text{
-    padding-top: 3%;
-    padding-left: 2%;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 27px;
+.mainbox-info{
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.left-bottom-sign{
-    margin: 10px;
-    margin-top: 25px;
-}
-.mail{
-    padding: 2%;
-    font-family: inherit;
-    width: 60%;
-    margin-right: 10px;
-    border: none;
-    border-radius: 7px;
-}
-.button{
-    padding: 2%;
-    font-family: 'Oswald', sans-serif;
-    font-size: 15pt;
-    font-weight: bolder;
-    width: 40%;
-    border: none;
-    border-radius: 7px;
-    color: white;
-    background-color: #5a5a5a;
+.mainbox-codeg-tagline{
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2vw;
+  line-height: 1.2em;
 }
 
-.button:hover{
-    color: #00ffc3;
+.mainbox-signup{
+  display: flex;
+  width: 80%;
+  height: 20%;
+  justify-content: space-between;
 }
 
-.right{
-  margin-left: 12rem;
+.mail-input-box{
+  padding-left: 2%;
+  font-family: inherit;
+  font-size: 1.5vw;
+  width: 69%;
+  border: none;
+  border-radius: 7px;
 }
-.logo{
-    position: relative;
-    width: 35rem;
-    border: 2px solid white;
-    height: 35rem;
-    display: flex;
-    border-radius: 100%;
-    align-items: center;
-    justify-content: center;
+
+.mail-button{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  width: 27%;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background-color: #5a5a5a;
+}
+
+.mail-button:hover{
+  color: #00ffc3;
+}
+
+/* Right Section */
+
+.mainbox-animated-logo{
+  display: flex;
+  width: 45%;
+  height: 80%;
+  align-items: center;
+}
+
+.white-border-container{
+  display: flex;
+  position: relative;
+  border: 1px solid white;
+  width: 38vw;
+  height: 38vw;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
   }
   
-.logo_background{
-  
+.logo-background{
   border-radius: 50%;
-  width: 33.5rem;
-  height: 33.5rem;
+  width: 35vw;
+  height: 35vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1%;
-  padding: 1%;
 }
 
-.logo_background_animation{
+.logo-background-animation{
   position: absolute;
-  left: 0;
-  right: 0;
-  
-  border-radius: 50%;
-  width: 33.5rem;
-  height: 33.5rem;
+  border-radius: 100%;
+  width: 36.5vw;
+  height: 36.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1%;
-  padding: 1%;
   background: linear-gradient(to bottom right,  #282c34 0%,#282c34 50%,rgb(10, 255, 195) 50%,rgb(10, 255, 195) 100%);
   animation: rotate-logo 5s infinite;
 }
@@ -115,42 +128,42 @@
   }
 }
   
-.cg_logo_container{
+.cg-logo-container{
   z-index: 2;
+  height: 26vw;
+  width: 26vw;
   background-color: #363940;
   border: 1px solid #363940;
   border-radius: 50%;
-  width: 27rem;
-  height: 27rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  box-shadow: -2px 3px 10px black;
+  box-shadow: 0px 0px 15px black;
   animation: none;
   }
   
-  .cg_logo{
+.cg-logo{
   width: 90%;
   height: auto;
-  }
+}
   
-  .discord_logo_container{
-    background-color: #9f9e9d;
-    position: absolute;
-    border-radius: 100%;
-    display: flex;
-    width: 6rem;
-    height: 6rem;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    left: 80%;
-    top: 5%;
-    box-shadow: -2px 3px 10px black;
-  }
+.discord_logo_container{
+  background-color: #9f9e9d;
+  position: absolute;
+  border-radius: 100%;
+  display: flex;
+  width: 6vw;
+  height: 6vw;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  left: 80%;
+  top: 5%;
+  box-shadow: -2px 3px 10px black;
+}
   
-  .discord_logo{
-    width: 100%;
-    height: auto;
-  }
+.discord_logo{
+  width: 100%;
+  height: auto;
+}

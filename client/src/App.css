@@ -22,3 +22,9 @@
 ::selection {
   background-color: rgb(10, 255, 195);
 }
+.footer-section {
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+  width: 100%;
+}

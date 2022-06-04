@@ -1,10 +1,10 @@
 
 .header-navbar{ 
-    font-size: large;   /*Large bhai to khush ho gyaa hoga niii.... ladkee jeet gya !! */
+    font-size: 20px;   /*Large bhai to khush ho gyaa hoga niii.... ladkee jeet gya !! */
     display: flex;
     justify-content: center;
     align-items:center;
-    padding:10px 10px;
+    padding:10px 30px;
     background-color: #282c34;
 }
 .header-nav-links > li > div{
@@ -67,7 +67,7 @@ li:last-child{
 }
 .sign-up{
     text-decoration: none;
-    padding: 2% 3%;
+    padding: 1% 3%;
     border: solid 1px white;
     border-radius: 5px;
 }
@@ -75,7 +75,7 @@ li:last-child{
     padding-left: 3%;
     font-family: 'Gagalin', sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 55px;
 }
 .logo-img{
     display: flex;

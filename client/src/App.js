@@ -12,15 +12,16 @@ function App() {
     // <Mainbox/>
     <div className="App">
       <Navbar />
-      {/* <Mainbox/> */}
+      <Mainbox />
       <section className="create-contest-card-background">
         <CreateContestCard />
       </section>
       <section className="become-codie-card-background">
         <BecomeCodie />
       </section>
-      <SignUp />
-      <Footer />
+      <section className="footer-section">
+        <Footer />
+      </section>
     </div>
   );
 }
