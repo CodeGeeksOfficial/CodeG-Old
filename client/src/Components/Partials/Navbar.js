@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../Assets/CodeG-Logo.png";
-import "./Navbar.css";
+import logo from "assets/CodeG-Logo.png";
+import "components/partials/Navbar.css";
 let navItems = [
   { title: "Home", link: "https://www.google.com" },
   { title: "Team", link: "https://www.google.com" },
@@ -9,6 +9,7 @@ let navItems = [
 ];
 
 //TODO use memo hooks
+//TODO research about vite and tysx (Better dev experience)
 
 export default function Navbar() {
   return (

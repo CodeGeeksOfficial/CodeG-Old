@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./CreateContest.module.css";
-import Illustration from "../../Assets/Create-Contest-Illustration.png";
+import Illustration from "assets/Create-Contest-Illustration.png";
 
 export default function Create_Contest_Card() {
   return (

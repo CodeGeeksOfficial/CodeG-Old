@@ -124,11 +124,8 @@
     animation: rotate-logo infinite 7s linear;
   }
 }
-
+/* @ in most of the languages are Decorators  */
 @keyframes rotate-logo {
-  0% {
-    transform: rotate(0deg);
-  }
   100% {
     transform: rotate(360deg);
   }

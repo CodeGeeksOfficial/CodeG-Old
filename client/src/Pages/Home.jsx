@@ -1,8 +1,8 @@
 import React from "react";
-import CreateContestCard from "../Components/HomeComponents/CreateContest";
-import Mainbox from "../Components/HomeComponents/Mainbox";
-import BecomeCodie from "../Components/HomeComponents/BecomeCodie";
-
+import CreateContestCard from "components/home-components/CreateContest";
+import Mainbox from "components/home-components/Mainbox";
+import BecomeCodie from "components/home-components/BecomeCodie";
+//programatic classes react
 const Home = () => {
   return (
     <>
