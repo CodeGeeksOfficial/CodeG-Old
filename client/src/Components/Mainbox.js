@@ -31,8 +31,10 @@ export default function Mainbox() {
             <div className="cg-logo-container">
               <img className="cg-logo" src={logo} alt="cg_logo"></img>
             </div>
-            <div className="discord_logo_container">
-              <img className="discord_logo" src={discord_logo} alt="discord_logo"></img>
+            <div className="discord-logo-container">
+              <div className="discord-logo-sub-container">
+                <img className="discord-logo" src={discord_logo} alt="Discord logo"></img>
+              </div>
             </div>
           </div>
         </div>
