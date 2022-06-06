@@ -1,7 +1,7 @@
 import React from "react";
 import "./OnlineIDE.css";
-import Onlineide_gif from "../../Assets/online-ide-gif.gif";
-{/*import Arrowhead from '../../Assets/icons8-chevron-right-material-rounded-96.png'*/}
+import Onlineide_gif from "assets/online-ide-gif.gif";
+{/*import Arrowhead from 'assets/icons8-chevron-right-material-rounded-96.png'*/}
 
 function OnlineIDE() {
   return (
