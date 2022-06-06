@@ -1,8 +1,8 @@
-import React from 'react'
-import './BecomeCodie.css'
-import Illustration from '../Assets/Become-Codie-Illustration.png'
-import DiscordLogo from '../Assets/Discord-Bubble-Color.png'
-import TelegramLogo from '../Assets/Telegram-Logo.png'
+import React from "react";
+import "./BecomeCodie.css";
+import Illustration from "assets/Become-Codie-Illustration.png";
+import DiscordLogo from "assets/Discord-Bubble-Color.png";
+import TelegramLogo from "assets/Telegram-Logo.png";
 
 export default function BecomeCodie() {
   return (
@@ -11,7 +11,10 @@ export default function BecomeCodie() {
         <div className="become-codie-card-content">
           <span>Become A Codie Now !</span>
           <div className="become-codie-card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis nihil quas, fuga temporibus, veniam vero pariatur molestias quo totam illo recusandae incidunt iure mollitia eos magni! Aut, alias necessitatibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            corporis nihil quas, fuga temporibus, veniam vero pariatur molestias
+            quo totam illo recusandae incidunt iure mollitia eos magni! Aut,
+            alias necessitatibus.
           </div>
           <div className="become-codie-links">
             <div className="become-codie-discord-link">
@@ -39,5 +42,5 @@ export default function BecomeCodie() {
         </div>
       </div>
     </div>
-  )
+  );
 }
