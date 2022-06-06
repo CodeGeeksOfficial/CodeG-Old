@@ -2,8 +2,8 @@ import React from 'react';
 import "./ExploreCommunityTimeline.css";
 import OurMissionandVision from "./OurMissionandVision";
 import OnlineIDE from "./OnlineIDE";
-import Illustration from '../../Assets/missionandvision-illustration.png';
-import practice from '../../Assets/practice-illustration.png';
+import Illustration from 'assets/missionandvision-illustration.png';
+import practice from 'assets/practice-illustration.png';
 
 function ExploreCommunityTimeline() {
     const missionAndVision_description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."

@@ -1,7 +1,6 @@
 import React from 'react';
 import "./OurMissionandVision.css";
-import Illustration from '../../Assets/missionandvision-illustration.png';
-{/*import Arrowhead from '../../Assets/icons8-chevron-right-material-rounded-96.png'*/}
+{/*import Arrowhead from 'assets/icons8-chevron-right-material-rounded-96.png'*/}
 
 function OurMissionandVision({heading, description, text_link, images}) {
     return (
