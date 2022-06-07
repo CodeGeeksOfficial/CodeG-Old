@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
-  name: {
+  userFullName: {
     type: String,
     required: true,
   },
@@ -28,7 +28,7 @@ const userSchema = mongoose.Schema({
   },
 
   preferedLanguage: {
-    type: [String],
+    type: String,
     enum: ["c++", "java", "python"],
     required: true,
   },
@@ -38,12 +38,9 @@ const userSchema = mongoose.Schema({
     default: 0,
   },
 
-  email: {
+  occupation: {
     type: String,
-  },
-
-  Occupation: {
-    type: String,
+    enum: ["Student", "Job aspirant", "Working professional", "Other"],
     required: true,
   },
 
