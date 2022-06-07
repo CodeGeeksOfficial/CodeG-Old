@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "assets/CodeG-Logo.png";
 import "components/partials/Navbar.css";
+import { Link } from "react-router-dom";
+
 let navItems = [
   { title: "Home", link: "https://www.google.com" },
   { title: "Team", link: "https://www.google.com" },
@@ -34,12 +36,12 @@ export default function Navbar() {
         </div>
       </div>
       <div className="user-info">
-        <a href="#" className="sign-in">
+        <Link to="/signin" className="sign-in">
           Sign In
-        </a>
-        <a href="#" className="sign-up">
+        </Link>
+        <Link to="signup" className="sign-up">
           Sign Up
-        </a>
+        </Link>
       </div>
     </div>
   );
