@@ -75,6 +75,7 @@
 }
 
 .mail-button:hover{
+  cursor: pointer;
   color: #00ffc3;
 }
 

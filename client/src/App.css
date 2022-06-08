@@ -7,13 +7,16 @@
   background-color: rgb(245, 245, 245);
   color: #282c34;
 }
-.create-contest-card-background{
+.create-contest-card-container{
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 20vw;
 }
-.become-codie-card-background{
+.become-codie-card-container{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 ::selection{
   background-color:rgb(10, 255, 195) ;
@@ -29,4 +32,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.timeline-section{
+  /* background-color: rgb(215, 215, 215); */
+  width: 100vw;
+  height: 200vw;
+  display: flex;
+  /* justify-content: center; */flex-direction: column;
+  align-items: center;
 }
