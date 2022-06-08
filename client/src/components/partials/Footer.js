@@ -8,7 +8,7 @@ import youtubelogo from "assets/youtube-footer-logo.png";
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <div className="footer-container">
       <div className="footer-content">
         <ul>
           <li>

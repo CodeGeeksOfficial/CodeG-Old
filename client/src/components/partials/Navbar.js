@@ -14,7 +14,7 @@ let navItems = [
 export default function Navbar() {
   return (
     <div className="header-navbar">
-      <nav className="nav-list">
+      <nav className="header-nav-list">
         <ul className="header-nav-links">
           {navItems.map((e) => {
             return (
@@ -34,6 +34,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="user-info">
+        {/* FIXME */}
         <a href="#" className="sign-in">
           Sign In
         </a>
