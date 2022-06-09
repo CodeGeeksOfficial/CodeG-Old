@@ -26,11 +26,11 @@ export default function Footer() {
         </ul>
       </div>
       <div className="footer-socialmedia">
-        <img className="footer-socialmedia-icon" src={discordlogo} alt="Discord-logo"></img>
-        <img className="footer-socialmedia-icon" src={telegramlogo} alt="Telegram-logo"></img>
-        <img className="footer-socialmedia-icon" src={instagramlogo} alt="Instagram-logo"></img>
-        <img className="footer-socialmedia-icon" src={facebooklogo} alt="Facebook-logo"></img>
-        <img className="footer-socialmedia-icon" src={youtubelogo} alt="Youtube-logo"></img>
+        <img className="footer-socialmedia-icon discord-links" src={discordlogo} alt="Discord-logo" onClick={()=>window.open("https://bit.ly/codeg_discord")}></img>
+        <img className="footer-socialmedia-icon telegram-links" src={telegramlogo} alt="Telegram-logo" onClick={()=>window.open("https://bit.ly/codeg_telegram")}></img>
+        <img className="footer-socialmedia-icon instagram-links" src={instagramlogo} alt="Instagram-logo" onClick={()=>window.open("https://www.instagram.com/codegofficial/")}></img>
+        <img className="footer-socialmedia-icon facebook-links" src={facebooklogo} alt="Facebook-logo"></img>
+        <img className="footer-socialmedia-icon youtube-links" src={youtubelogo} alt="Youtube-logo"></img>
       </div>
     </div>
   );

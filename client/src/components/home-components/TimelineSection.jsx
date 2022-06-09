@@ -47,7 +47,13 @@ export const TimelineSection = () => {
         </div>
         <div className="timeline-clubs-container">
             <div className="clubs-components-container">
-
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    preserveAspectRatio="none" 
+                    viewBox="0 0 110 142" 
+                    class="clubs-track-svg">
+                    <path d="m1-8c0 75 108 75 108 150" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+                </svg>
             </div>
         </div>
     </>

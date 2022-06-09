@@ -173,13 +173,11 @@
   height: 6vw;
   width: 6vw;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   box-shadow: 0px 0px 10px black;
 }
 .discord-logo-sub-container:hover{
   box-shadow: 0px 0px 20px black;
-  height: 7vw;
-  width: 7vw;
+  transform: scale(1.15);
 }
 .discord-logo{
   width: 80%;

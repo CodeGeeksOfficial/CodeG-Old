@@ -19,7 +19,7 @@
   align-items: center;
 }
 ::selection{
-  background-color:rgb(10, 255, 195) ;
+  background-color:rgb(10, 255, 195,0.9) ;
 }
 .footer-section{
   display: flex;
@@ -39,6 +39,11 @@
   width: 100vw;
   height: 200vw;
   display: flex;
-  /* justify-content: center; */flex-direction: column;
+  /* justify-content: center; */
+  flex-direction: column;
   align-items: center;
+}
+
+.discord-links, .telegram-links,.instagram-links,.facebook-links,.youtube-links{
+  cursor: pointer;
 }

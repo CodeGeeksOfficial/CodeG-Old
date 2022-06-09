@@ -17,9 +17,8 @@
     background-color: rgb(48, 49, 54);
     font-size: 2vw;
     position: relative;
-    /* left: -10px; */
     top: -0.5vw;
-    left: -4.74vw;
+    left: -5.35vw;
 }
 .type-two-container-left{
     display: flex;
