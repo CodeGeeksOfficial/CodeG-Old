@@ -33,6 +33,7 @@
     align-items: center;
 }
 .type-one-container-heading > div{
+    margin-left: -1.5vw;
     color: rgb(255, 255, 255);
     font-size: 2.7rem;
     font-weight: 900;
@@ -45,7 +46,7 @@
     font-size: 2vw;
     position: relative;
     top: -0.5vw;
-    left: -5.35vw;
+    left: -3.85vw;
 }
 .type-one-container-description{
     display: flex;

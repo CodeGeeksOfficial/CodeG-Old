@@ -13,12 +13,13 @@
 }
 .type-two-container-heading > div::before{
     content:"⃝";
+    margin-left: -1vw;
     border: solid .3vw rgb(48, 49, 54);
     background-color: rgb(48, 49, 54);
     font-size: 2vw;
     position: relative;
     top: -0.5vw;
-    left: -5.35vw;
+    left: -4.35vw;
 }
 .type-two-container-left{
     display: flex;
