@@ -36,7 +36,7 @@ export default function Mainbox() {
             <div className="cg-logo-container">
               <img className="cg-logo" src={logo} alt="cg_logo"></img>
             </div>
-            <div className="discord-logo-container">
+            <div className="discord-logo-container discord-links" onClick={()=>window.open("https://bit.ly/codeg_discord")}>
               <div className="discord-logo-sub-container">
                 <img className="discord-logo" 
                   src={discord_logo}

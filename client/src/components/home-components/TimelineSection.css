@@ -1,0 +1,89 @@
+/* timeline-nav-list styling */
+
+.timeline-nav-list {
+    /* border: solid 0.1vw black; */
+    height: 3%;
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 85%;
+}
+
+.timeline-nav-list > li{
+    width: 13%;
+    padding-right: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-nav-list > li > div{
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: rgb(90, 90, 90);
+    border: solid 0.15vw transparent;
+    transition: all 0.2s ease-in-out;
+}
+.timeline-nav-list > li >div:hover{
+    border-bottom: solid 0.15vw rgb(90, 90, 90);
+    /* box-shadow: 2px 2px 5px 1px rgb(120, 120, 120); */
+}
+
+/* timeline-community-container styling */
+
+.timeline-community-container{
+    width: 95%;
+    height: 50%;
+    border-radius: 2%;
+    background-color: rgb(48, 49, 54);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.timeline-community-container > h1{
+    font-family: 'Archivo Black', sans-serif;
+    align-self: baseline;
+    font-size: 4vw;
+    margin: 0;
+    padding: 2vw 5vw;
+    background: linear-gradient(to bottom, white 55%, rgb(168, 166, 166) 60%,rgb(104, 104, 104) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.community-components-containers{
+    /* border-left: solid 0.3vw rgb(10, 255, 195); */
+    padding: 5% 0% 5% 4% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: solid 0.2vw rgb(130, 130, 130);
+    width: 81%;
+    height: 100%;
+}
+
+/* timeline-clubs-container styling */
+
+.timeline-clubs-container{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 47%;
+    /* border: solid 1px red; */
+}
+.clubs-track-svg{
+    display: block !important;
+    position: relative !important;
+    margin-left: -8.33333333%;
+    left: calc(8.33333% - 1.5rem);
+    width: calc(8.33333% + 0.125rem);
+    height: 8.875rem;
+}
+.clubs-components-container{
+    border-left: solid 0.2vw rgb(130, 130, 130);
+    height: 100%;
+    width: 85%;
+}

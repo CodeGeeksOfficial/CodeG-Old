@@ -17,7 +17,7 @@ export default function BecomeCodie() {
             alias necessitatibus.
           </div>
           <div className="become-codie-links">
-            <div className="become-codie-discord-link">
+            <div className="become-codie-discord-link discord-links" onClick={()=>window.open("https://bit.ly/codeg_discord")}>
               <img src={DiscordLogo} alt="Discord Logo" />
               <div className="join-us-at-discord">
                 <div className="text">
@@ -26,7 +26,7 @@ export default function BecomeCodie() {
                 <span>Discord</span>
               </div>
             </div>
-            <div className="become-codie-telegram-link">
+            <div className="become-codie-telegram-link telegram-links" onClick={()=>window.open("https://bit.ly/codeg_telegram")}>
               <img src={TelegramLogo} alt="Telegram Logo" />
               <div className="join-us-at-telegram">
                 <div className="text">

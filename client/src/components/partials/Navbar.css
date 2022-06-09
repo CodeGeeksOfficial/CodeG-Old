@@ -12,21 +12,21 @@
     color: white;
     text-decoration: none;
 }
-nav{
+.header-nav-list{
     width: 40%;
 }
-ul{
+.header-nav-links{
     list-style-type: none;
     display: flex;
     /* justify-content: space-between; */
     margin: 0%;
     padding: 0%;
 }
-li{
+.header-nav-links li{
     padding-right: 5%;
 }
 
-li:last-child{
+.header-nav-links li:last-child{
     padding-right: 0%;
 }
 .header-nav-links > li > div{

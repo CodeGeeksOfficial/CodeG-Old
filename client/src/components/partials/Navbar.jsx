@@ -16,7 +16,7 @@ let navItems = [
 export default function Navbar() {
   return (
     <div className="header-navbar">
-      <nav className="nav-list">
+      <nav className="header-nav-list">
         <ul className="header-nav-links">
           {navItems.map((e) => {
             return (
