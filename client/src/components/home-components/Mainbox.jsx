@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "assets/CodeG-Logo.png";
-import discord_logo from "assets/Discord-Logo.png";
-import "./Mainbox.css";
+import logo from "assets/images/CodeG-Logo.png";
+import discord_logo from "assets/images/Discord-Logo.png";
+import "assets/css/Mainbox.css";
 
 export default function Mainbox() {
   return (

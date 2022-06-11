@@ -1,8 +1,8 @@
 import React from "react";
-import "./BecomeCodie.css";
-import Illustration from "assets/Become-Codie-Illustration.png";
-import DiscordLogo from "assets/Discord-Bubble-Color.png";
-import TelegramLogo from "assets/Telegram-Logo.png";
+import "assets/css/BecomeCodie.css";
+import Illustration from "assets/images/Become-Codie-Illustration.png";
+import DiscordLogo from "assets/images/Discord-Bubble-Color.png";
+import TelegramLogo from "assets/images/Telegram-Logo.png";
 
 export default function BecomeCodie() {
   return (

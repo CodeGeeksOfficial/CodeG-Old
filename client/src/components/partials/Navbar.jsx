@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "assets/CodeG-Logo.png";
-import "components/partials/Navbar.css";
+import logo from "assets/images/CodeG-Logo.png";
+import "assets/css//Navbar.css";
 let navItems = [
   { title: "Home", link: "https://www.google.com" },
   { title: "Team", link: "https://www.google.com" },

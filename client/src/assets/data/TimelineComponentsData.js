@@ -1,4 +1,4 @@
-const data = [
+const community_data = [
   {
     heading: "Our Mission And Vision",
     description:
@@ -49,4 +49,4 @@ const club_data = [
   },
 ];
 
-export { data, club_data };
+export { community_data, club_data };

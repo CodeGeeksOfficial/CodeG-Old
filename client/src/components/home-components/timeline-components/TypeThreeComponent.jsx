@@ -1,5 +1,5 @@
 import React from "react";
-import "./ClubComponent.css";
+import "assets/css/TypeThreeComponent.css";
 
 export default function clubComponent({ club_name, description, image }) {
   return (
