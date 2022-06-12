@@ -1,40 +1,40 @@
 /* All imported files in App.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gagalin');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gagalin");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap");
 .App {
   background-color: rgb(245, 245, 245);
   color: #282c34;
 }
-.create-contest-card-container{
+.create-contest-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20vw;
 }
-.become-codie-card-container{
+.become-codie-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-::selection{
-  background-color:rgb(10, 255, 195,0.9) ;
+::selection {
+  background-color: rgb(10, 255, 195, 0.9);
 }
-.footer-section{
+.footer-section {
   display: flex;
   justify-content: center;
   background-color: #282c34;
   width: 100%;
 }
 
-.explore-community-timeline-container{
+.explore-community-timeline-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.timeline-section{
+.timeline-section {
   /* background-color: rgb(215, 215, 215); */
   width: 100vw;
   height: 200vw;
@@ -44,7 +44,11 @@
   align-items: center;
 }
 
-.discord-links, .telegram-links,.instagram-links,.facebook-links,.youtube-links{
+.discord-links,
+.telegram-links,
+.instagram-links,
+.facebook-links,
+.youtube-links {
   cursor: pointer;
 }
 /* 
