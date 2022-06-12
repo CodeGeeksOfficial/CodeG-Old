@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "assets/images/CodeG-Logo.png";
 import "assets/css//Navbar.css";
-// import { GiHamburgerMenu } from "react-icons/gi";
-// import { IoMdClose } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 let navItems = [
   { title: "Home", link: "https://www.google.com" },
@@ -15,15 +15,19 @@ let navItems = [
 //TODO research about vite and tysx (Better dev experience)
 
 export default function Navbar() {
-  // const [displayMenu, setDisplayMenu] = useState(false);
+  const [displayMenu, setDisplayMenu] = useState(false);
+
+  const leftNavbar = displayMenu
+    ? "navbar-left-menu"
+    : "navbar-left-menu navbar-left-menu-close";
   return (
     <div className="header-navbar">
-      {/* <div className="navbar-hamburger-icon__container">
+      <div className="navbar-hamburger-icon__container">
         {displayMenu && <IoMdClose onClick={() => setDisplayMenu(false)} />}
         {!displayMenu && (
           <GiHamburgerMenu onClick={() => setDisplayMenu(true)} />
         )}
-      </div> */}
+      </div>
       <nav className="header-nav-list">
         <ul className="header-nav-links">
           {navItems.map((e) => (
@@ -52,6 +56,28 @@ export default function Navbar() {
           Sign Up
         </a>
       </div>
+      <nav className={leftNavbar}>
+        <ul className="navbar-left-menu-links__container">
+          {navItems.map((e) => (
+            <li
+              className="navbar-left-menu-link"
+              key={e.title}
+              onClick={() => window.open(e.link)}
+            >
+              {e.title}
+            </li>
+          ))}
+        </ul>
+        <div className="navbar-left-menu-auth__container">
+          {/* FIXME */}
+          <a href="#" className="sign-in">
+            Sign In
+          </a>
+          <a href="#" className="sign-up">
+            Sign Up
+          </a>
+        </div>
+      </nav>
     </div>
   );
 }
