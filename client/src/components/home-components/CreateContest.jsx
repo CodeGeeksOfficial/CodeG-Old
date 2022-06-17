@@ -3,15 +3,19 @@
 import React from "react";
 import styles from "assets/css/CreateContest.module.css";
 import Illustration from "assets/images/Create-Contest-Illustration.png";
+import { Link } from "react-router-dom";
 const handleClickRqst = () => {
-  console.log('Creat a contest clicked ')
-}
+  console.log("Creat a contest clicked ");
+};
 export default function Create_Contest_Card() {
   return (
     <div className={styles["create-contest-card"]}>
       <div className={styles["create-contest-card-content"]}>
-        <div className={styles["create-contest-button"]} onClick={handleClickRqst}>
-          <span>Create a Contest</span>
+        <div
+          className={styles["create-contest-button"]}
+          onClick={handleClickRqst}
+        >
+          <Link to="/contest">Create a Contest</Link>
         </div>
         <div className={styles["create-contest-card-description"]}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti

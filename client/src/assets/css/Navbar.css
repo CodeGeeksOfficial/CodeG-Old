@@ -54,6 +54,13 @@
   align-items: center;
   width: 20%;
 }
+
+.codeg-badge-link {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
 .user-info {
   display: flex;
   justify-content: right;

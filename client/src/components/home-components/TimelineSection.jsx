@@ -3,10 +3,7 @@ import "assets/css/TimelineSection.css";
 import TypeOneComponent from "components/home-components/timeline-components/TypeOneComponent";
 import TypeTwoComponent from "components/home-components/timeline-components/TypeTwoComponent";
 import ClubComponent from "components/home-components/timeline-components/TypeThreeComponent";
-import {
-  community_data,
-  club_data,
-} from "assets/data/TimelineComponentsData";
+import { community_data, club_data } from "assets/data/TimelineComponentsData";
 import mission_illustration from "assets/images/missionandvision-illustration.png";
 import ide_illustration from "assets/images/online-ide-gif.gif";
 import practice_illustration from "assets/images/practice-illustration.png";
@@ -25,37 +22,46 @@ const timelineNavItems = [
 export const TimelineSection = () => {
   return (
     <>
-        <nav className='timeline-nav-list'>
-            {timelineNavItems.map((e) => {
-                return (<li key={e.title} onClick={()=>{window.open(e.link)}}><div>{e.title}</div></li>);
-            })}
-        </nav>
-        <div className="timeline-community-container">
-            <h1>Explore our community</h1>
-            <div className="community-components-containers">
-                <TypeOneComponent 
-                    heading={community_data[0].heading} 
-                    description={community_data[0].description} 
-                    link_title={community_data[0].link_title} 
-                    image={mission_illustration}
-                    id = "first-id"
-                />
-                <TypeTwoComponent 
-                    heading={community_data[1].heading} 
-                    description={community_data[1].description} 
-                    link_title={community_data[1].link_title} 
-                    image={ide_illustration}
-                    id = "second-id"
-                />
-                <TypeOneComponent 
-                    heading={community_data[2].heading} 
-                    description={community_data[2].description} 
-                    link_title={community_data[2].link_title} 
-                    image={practice_illustration}
-                    id = "third-id"
-                />
-            </div>
+      <nav className="timeline-nav-list">
+        {timelineNavItems.map((e) => {
+          return (
+            <li
+              key={e.title}
+              onClick={() => {
+                window.open(e.link);
+              }}
+            >
+              <div>{e.title}</div>
+            </li>
+          );
+        })}
+      </nav>
+      <div className="timeline-community-container">
+        <h1>Explore our community</h1>
+        <div className="community-components-containers">
+          <TypeOneComponent
+            heading={community_data[0].heading}
+            description={community_data[0].description}
+            link_title={community_data[0].link_title}
+            image={mission_illustration}
+            id="first-id"
+          />
+          <TypeTwoComponent
+            heading={community_data[1].heading}
+            description={community_data[1].description}
+            link_title={community_data[1].link_title}
+            image={ide_illustration}
+            id="second-id"
+          />
+          <TypeOneComponent
+            heading={community_data[2].heading}
+            description={community_data[2].description}
+            link_title={community_data[2].link_title}
+            image={practice_illustration}
+            id="third-id"
+          />
         </div>
+      </div>
       <div className="timeline-clubs-container">
         <div className="clubs-container">
           <h1>Clubs</h1>

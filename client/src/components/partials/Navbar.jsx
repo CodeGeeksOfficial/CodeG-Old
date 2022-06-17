@@ -3,12 +3,13 @@ import logo from "assets/images/CodeG-Logo.png";
 import "assets/css//Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 let navItems = [
-  { title: "Home", link: "https://www.google.com" },
-  { title: "Team", link: "https://www.google.com" },
-  { title: "About", link: "https://www.google.com" },
-  { title: "Practice", link: "https://www.google.com" },
+  { title: "Home", link: "/" },
+  { title: "Team", link: "/team" },
+  { title: "About", link: "/about" },
+  { title: "Practice", link: "/practice" },
 ];
 
 //TODO use memo hooks
@@ -30,22 +31,22 @@ export default function Navbar() {
       </div>
       <nav className="header-nav-list">
         <ul className="header-nav-links">
-          {navItems.map((e) => (
-            <li
-              className="navbar-link-element"
-              key={e.title}
-              onClick={() => window.open(e.link)}
-            >
-              {e.title}
+          {navItems.map((navItem) => (
+            <li className="navbar-link-element" key={navItem.title}>
+              <Link className="navbar-link-element" to={navItem.link}>
+                {navItem.title}
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
       <div className="codeg-badge">
-        <img className="navbar-logo-img" src={logo} alt="CodeG Logo" />
-        <p className="logo-name">
-          CODE<span className="logo-name-G">G</span>
-        </p>
+        <Link className="codeg-badge-link" to="/">
+          <img className="navbar-logo-img" src={logo} alt="CodeG Logo" />
+          <p className="logo-name">
+            CODE<span className="logo-name-G">G</span>
+          </p>
+        </Link>
       </div>
       <div className="user-info">
         {/* FIXME */}
