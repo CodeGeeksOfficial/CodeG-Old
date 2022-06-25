@@ -1,10 +1,10 @@
 import React from "react";
-import "./Footer.css";
-import discordlogo from "assets/discord-footer-logo.png";
-import telegramlogo from "assets/telegram-footer-logo.png";
-import instagramlogo from "assets/instagram-footer-logo.png";
-import facebooklogo from "assets/facebook-footer-logo.png";
-import youtubelogo from "assets/youtube-footer-logo.png";
+import "assets/css/Footer.css";
+import discordlogo from "assets/images/discord-footer-logo.png";
+import telegramlogo from "assets/images/telegram-footer-logo.png";
+import instagramlogo from "assets/images/instagram-footer-logo.png";
+import facebooklogo from "assets/images/facebook-footer-logo.png";
+import youtubelogo from "assets/images/youtube-footer-logo.png";
 
 export default function Footer() {
   return (

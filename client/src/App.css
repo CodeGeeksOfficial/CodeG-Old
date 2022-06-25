@@ -55,3 +55,8 @@
 .youtube-links {
   cursor: pointer;
 }
+/* 
+html::-webkit-scrollbar-thumb {
+  scrollbar-width: normal;
+  scrollbar-color: rgb(151, 44, 44) rgb(10, 255, 195) !important;
+} */

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SignIn.module.css";
-import logo from "assets/CodeG-Logo.png";
+import logo from "assets/images/CodeG-Logo.png";
 
 const SignIn = () => {
   return (
