@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "components/partials/Navbar";
 import Footer from "components/partials/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "pages/Home";
 import SignUp from "pages/SignUp";
 import SignIn from "pages/SignIn";
@@ -12,6 +12,8 @@ import Team from "pages/Team";
 import Practice from "pages/Practice";
 import Contest from "pages/Contest";
 import UserProfile from "pages/UserProfile";
+import SecretPage from "pages/SecretPage";
+import AuthContext from "store/auth-context";
 
 function App() {
   // const location = useLocation();
@@ -24,6 +26,7 @@ function App() {
   // }, [displayNavbar]);
 
   // console.log(history);
+  const authCtx = useContext(AuthContext);
   return (
     // <Mainbox/>
     <div className="App">
@@ -37,8 +40,14 @@ function App() {
         <Route path="/practice" element={<Practice />} />
         <Route path="/contest" element={<Contest />} />
         <Route path="/userprofile" element={<UserProfile />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
+        {!authCtx.isLoggedIn && <Route path="/signup" element={<SignUp />} />}
+        {!authCtx.isLoggedIn && <Route path="/signin" element={<SignIn />} />}
+        {authCtx.isLoggedIn && (
+          <Route path="/secret" element={<SecretPage />} />
+        )}
+        <Route path="*" element={<Home />} />
+        {/* <Navigate to="/" replace={true} />
+        </Route> */}
       </Routes>
       {/* <Home /> */}
       <section className="footer-section">

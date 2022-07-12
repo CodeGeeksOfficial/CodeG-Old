@@ -3,9 +3,12 @@ import styles from "./SignIn.module.css";
 import logo from "assets/images/CodeG-Logo.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import AuthContext from "store/auth-context";
 
 const SignIn = () => {
   let navigate = useNavigate();
+  const authCtx = useContext(AuthContext);
   const signInFormSubmitHandler = async (e) => {
     e.preventDefault();
     const signinForm = document.getElementById("signin-form");
@@ -24,13 +27,14 @@ const SignIn = () => {
         },
       };
 
-      const { response } = await axios.post(
+      const { data } = await axios.post(
         "http://localhost:5000/auth/login",
         signinformData,
         config
       );
       console.log("User logged in!!");
-      localStorage.setItem("userInfo", JSON.stringify(response));
+      authCtx.login(data.token);
+      localStorage.setItem("userInfo", JSON.stringify(data));
 
       navigate("/", { replace: true });
     } catch (error) {
