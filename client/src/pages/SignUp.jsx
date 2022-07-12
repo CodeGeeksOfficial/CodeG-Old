@@ -4,9 +4,12 @@ import styles from "./SignUp.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import AuthContext from "store/auth-context";
 
 const SignUp = () => {
   let navigate = useNavigate();
+  const authCtx = useContext(AuthContext);
   // const [displayName, setDisplayName] = useState(true);
   // const [displayEmail, setDisplayEmail] = useState(false);
   // const [displayUserName, setDisplayUserName] = useState(false);
@@ -151,13 +154,14 @@ const SignUp = () => {
         },
       };
 
-      const { response } = await axios.post(
+      const { data } = await axios.post(
         "http://localhost:5000/auth/register",
         signupformData,
         config
       );
       console.log("User account created!!");
-      localStorage.setItem("userInfo", JSON.stringify(response));
+      authCtx.login(data.token);
+      localStorage.setItem("userInfo", JSON.stringify(data));
 
       navigate("/", { replace: true });
     } catch (error) {
