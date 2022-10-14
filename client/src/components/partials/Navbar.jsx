@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import logo from "assets/images/CodeG-Logo.png";
-import "assets/css/Navbar.css";
+import "assets/css//Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
-import AuthContext from "store/auth-context";
 
 let navItems = [
   { title: "Home", link: "/" },
@@ -18,14 +17,6 @@ let navItems = [
 
 export default function Navbar() {
   const [displayMenu, setDisplayMenu] = useState(false);
-  const authCtx = useContext(AuthContext);
-
-  const isAuthenticated = authCtx.isLoggedIn;
-
-  const logoutHandler = () => {
-    authCtx.logout();
-    localStorage.removeItem("userInfo");
-  };
 
   const leftNavbar = displayMenu
     ? "navbar-left-menu"
@@ -58,21 +49,13 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="user-info">
-        {!isAuthenticated && (
-          <div>
-            <Link to="/signin" className="sign-in">
-              Sign In
-            </Link>
-            <Link to="signup" className="sign-up">
-              Sign Up
-            </Link>
-          </div>
-        )}
-        {isAuthenticated && (
-          <button className="sign-up" onClick={logoutHandler}>
-            Logout
-          </button>
-        )}
+        {/* FIXME */}
+        <a href="#" className="sign-in">
+          Sign In
+        </a>
+        <a href="#" className="sign-up">
+          Sign Up
+        </a>
       </div>
       <nav className={leftNavbar}>
         <ul className="navbar-left-menu-links__container">
@@ -87,6 +70,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="navbar-left-menu-auth__container">
+          {/* FIXME */}
           <a href="#" className="sign-in">
             Sign In
           </a>

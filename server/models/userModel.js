@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
 
 const userSchema = mongoose.Schema({
-  userFullName: {
+  name: {
     type: String,
     required: true,
   },
@@ -10,7 +9,6 @@ const userSchema = mongoose.Schema({
   userName: {
     type: String,
     required: true,
-    unique: true,
   },
 
   password: {
@@ -18,9 +16,10 @@ const userSchema = mongoose.Schema({
     required: true,
   },
 
-  userEmail: {
+  email: {
     type: String,
     required: true,
+    unique: true,
   },
 
   gender: {
@@ -29,7 +28,7 @@ const userSchema = mongoose.Schema({
   },
 
   preferedLanguage: {
-    type: String,
+    type: [String],
     enum: ["c++", "java", "python"],
     required: true,
   },
@@ -39,9 +38,12 @@ const userSchema = mongoose.Schema({
     default: 0,
   },
 
-  occupation: {
+  email: {
     type: String,
-    enum: ["Student", "Job aspirant", "Working professional", "Other"],
+  },
+
+  Occupation: {
+    type: String,
     required: true,
   },
 
@@ -68,19 +70,6 @@ const userSchema = mongoose.Schema({
   ],
 
   // TODO: submission count
-});
-
-userSchema.methods.matchPassword = async function (enteredPassword) {
-  return await bcrypt.compare(enteredPassword, this.password);
-};
-
-userSchema.pre("save", async function (next) {
-  if (!this.isModified) {
-    next();
-  }
-
-  const salt = await bcrypt.genSalt(12);
-  this.password = await bcrypt.hash(this.password, salt);
 });
 
 const User = mongoose.model("User", userSchema);
