@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import logo from "assets/images/CodeG-Logo.png";
+import placeholderProfilePic from "assets/images/placeholder-profile-pic.png";
 import "assets/css//Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
+import jwt_decode from "jwt-decode";
 
 let navItems = [
   { title: "Home", link: "/" },
@@ -50,12 +52,37 @@ export default function Navbar() {
       </div>
       <div className="user-info">
         {/* FIXME */}
-        <a href="#" className="sign-in">
-          Sign In
-        </a>
-        <a href="#" className="sign-up">
-          Sign Up
-        </a>
+        {/* TODO: Swap these elements */}
+        {!localStorage.getItem("authToken") && (
+          <>
+            <Link className="sign-in" to="/login">
+              Sign In
+            </Link>
+            <Link className="sign-up" to="/register">
+              Sign Up
+            </Link>
+          </>
+        )}
+
+        {localStorage.getItem("authToken") && (
+          <>
+            <div
+              className="navbar-profile-badge"
+              onClick={() => {
+                localStorage.removeItem("authToken");
+              }}
+            >
+              <img
+                className="navbar-profile-pic"
+                src={placeholderProfilePic}
+                alt=""
+              />
+              <div className="navbar-profile-name">
+                {jwt_decode(localStorage.getItem("authToken")).username}
+              </div>
+            </div>
+          </>
+        )}
       </div>
       <nav className={leftNavbar}>
         <ul className="navbar-left-menu-links__container">

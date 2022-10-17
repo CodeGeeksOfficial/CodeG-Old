@@ -11,6 +11,12 @@ import Practice from "pages/Practice";
 import Contest from "pages/Contest";
 import UserProfile from "pages/UserProfile";
 
+import LoginScreen from "components/auth/LoginScreen";
+import RegisterScreen from "components/auth/RegisterScreen";
+import ForgotPasswordScreen from "components/auth/ForgotPasswordScreen";
+import ResetPasswordScreen from "components/auth/ResetPasswordScreen";
+import VerifyUserScreen from "components/auth/VerifyUserScreen";
+
 function App() {
   return (
     // <Mainbox/>
@@ -24,6 +30,16 @@ function App() {
         <Route path="/practice" element={<Practice />} />
         <Route path="/contest" element={<Contest />} />
         <Route path="/userprofile" element={<UserProfile />} />
+
+        {/* Auth Routes */}
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/register" element={<RegisterScreen />} />
+        <Route path="/forgotpassword" element={<ForgotPasswordScreen />} />
+        <Route
+          path="/resetpassword/:resetToken"
+          element={<ResetPasswordScreen />}
+        />
+        <Route path="/verifyuser/:verifyToken" element={<VerifyUserScreen />} />
       </Routes>
       {/* <Home /> */}
       <section className="footer-section">

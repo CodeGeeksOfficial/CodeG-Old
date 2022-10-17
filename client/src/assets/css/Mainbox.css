@@ -3,10 +3,10 @@
   height: 50vw;
   background-image: radial-gradient(
     1100px 100px at bottom,
-    transparent 99%,
+    rgb(245, 245, 245) 99%,
     #282c34 100%
   );
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 /* Left Section */

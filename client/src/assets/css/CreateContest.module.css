@@ -45,6 +45,11 @@
     transition: all 0.2s ease-in-out;
     padding: 1vw 2vw 1vw 2vw;
 }
+.create-contest-button > a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .create-contest-button:hover{
     border: solid 1px rgb(10, 255, 195);
     background-color: rgb(10, 255, 195);

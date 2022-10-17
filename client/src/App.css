@@ -4,16 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap");
 .App {
-  background-color: rgb(245, 245, 245);
   color: #282c34;
 }
 .create-contest-card-container {
+  background-color: rgb(245, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20vw;
 }
 .become-codie-card-container {
+  background-color: rgb(245, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +36,7 @@
 }
 
 .timeline-section {
-  /* background-color: rgb(215, 215, 215); */
+  background-color: rgb(245, 245, 245);
   width: 100vw;
   height: 200vw;
   display: flex;
